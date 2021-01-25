@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="imagem/x-png" href="images.1/logo.png" />
+    <title>Diretor</title>
+    <link href="vendor/bootstrap/css1/styles.css" rel="stylesheet">
+    <link href="css/director.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-color">
+        <img src="images.1/logo.png" alt="logo" width=42 height=45.46 margin-left="20px" href="#page-top" id="logo"></img>
+        <a class="navbar-brand" href="direction.html" id="name">SECURE4ALL</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div id="app"></div>
+            </div>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="direction-profile.html" id="menu-profile">Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" id="menu-logout">Sair</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <hr class="division">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages" id="titles">
+                            <div class="sb-nav-link-icon"><img src="images.1/socios.png" width="18" height="18" id="image"></div>
+                            Sócios
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingFour" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" id="direction-menu" href="add-associate.html">Adicionar Sócio</a>
+                                <a class="nav-link" id="direction-menu" href="list-associate.html">Listar Sócios</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage3" aria-expanded="false" aria-controls="collapsePage3" id="titles">
+                            <div class="sb-nav-link-icon"><img src="images.1/operacionais.png" width="18" height="18" id="image"></img>
+                            </div>
+                            Operacionais
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePage3" aria-labelledby="headingThree" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" id="direction-menu1" href="#">Adicionar Operacional</a>
+                                <a class="nav-link" id="direction-menu" href="list-fireman.html">Listar Bombeiros</a>
+                                <a class="nav-link" id="direction-menu" href="list-centralist.html">Listar Centralistas</a>
+                            </nav>
+                        </div>
+
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage4" aria-expanded="false" aria-controls="collapsePage4" id="titles">
+                            <div class="sb-nav-link-icon"><img src="images.1/dir.png" width="18" height="18" id="image"></img>
+                            </div>
+                            Direção
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePage4" aria-labelledby="headingThree" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" id="direction-menu" href="add-dirmember.html">Adicionar Diretor</a>
+                                <a class="nav-link" id="direction-menu" href="list-dirmember.html">Listar Diretores</a>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="division2">
+                <div class="sb-sidenav-footer bg-color">
+                    <div class="small">Ligado como:</div>
+                    Membro da Direção
+                </div>
+            </nav>
+        </div>
+
+        <div id="layoutSidenav_content">
+            <form class="contact-form row" id="add-opperation">
+                <div class="col-sm-12">
+                    <section class="get-in-touch" id="addoc-title">
+                        <h1 class="title" id="addoc-title">Formulário Novo Operacional</h1>
+                    </section>
+                </div>
+
+                <div class="form-field col-sm-5 ">
+                    <label class="label" for="name"></label>Nome</label>
+                    <input id="addop-name" maxlength="150" minlength="2" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required></input>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class="form-field col-sm-5">
+                    <label class="label" for="password">Palavra Passe</label>
+                    <input id="addop-ps" maxlength="45" minlength="6" class="input-text js-input" type="password" maxlength="45" minlength="6" required></input>
+                </div>
+
+                <div class="form-field col-sm-5 addoc-margin">
+                    <label for="function" id="label-function">Função</label>
+                    <select name="Tipo de ocorrência" id="addop-function" required>
+                    <option value=""disabled selected></option>
+                    <option value="Centralista">Centralista</option>
+                    <option value="Bombeiro">Bombeiro</option>
+                </select>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class="form-field col-sm-5 addoc-margin" id="div-addoc-id">
+                    <label class="label" for="id" id="label-cc-opp">Cartão de cidadão</label>
+                    <input name="cc" maxlength="8" minlength="8" id="addop-cc" pattern="[0-9]+$" minlength="8" required onkeypress='return filtroTeclas(event)'></input>
+                </div>
+
+                <div class=" form-field col-sm-5 addoc-margin" id="div-addoc-date">
+                    <label class="label" for="adress" id="label-adress-opp">Morada</label>
+                    <input name="adress" maxlength="150" minlength="5" id="addop-adress" type="text" required></input>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class=" form-field col-sm-5 addoc-margin" id="div-addoc-phone">
+                    <label class="label" for="phone" id="label-phone">Telefone</label>
+                    <input type="tel" maxlength="9" minlength="9" name="phone" id="addop-phone" pattern="[0-9]+$" maxlength="9" minlength="9" required onkeypress='return filtroTeclas(event)'></input>
+                </div>
+
+
+                <div class="form-field col-sm-5 addoc-margin" id="div-addoc-age">
+                    <label class="label" for="email" id="label-email-opp">Email</label>
+                    <input name="email" maxlength="45" minlength="10" id="addop-email" type="email" required></input>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class="form-field col-sm-5 addoc-margin" id="div-addoc-quota">
+                    <label class="label" for="age" id="label-age-opp">Data de Nascimento</label>
+                    <input id="addop-birth" pattern="[0-9]+$" type="date" required></input>
+                </div>
+
+                <div class=" form-field col-sm-5 addoc-margin">
+                    <label class="label" for="date" id="label-phone">Ordenado (€ por hora)</label>
+                    <input name="number" id="addop-salary" pattern="[0-9]+$" maxlength="2" required onkeypress='return filtroTeclas(event)'></input>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class=" form-field col-sm-5 addoc-margin">
+                    <label class="label" for="date" id="entry_date">Data de entrada</label>
+                    <input name="entry_date" pattern="[0-9]+$" id="adopp-entry-date" type="date" required></input>
+                </div>
+
+                <div class="col-sm-12 text-right">
+                    <input id="addop-clean" class="btn btn-primary text-uppercase js-scroll-trigger" type="reset" value="limpar"></input>
+                    <input id="addop-add" class="btn btn-primary text-uppercase js-scroll-trigge" type="submit" value="adicionar" href=""></input>
+                </div>
+            </form>
+            </section>
+
+        </div>
+        <script src="js/hour.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/add-opperation.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

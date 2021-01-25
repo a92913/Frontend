@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="imagem/x-png" href="images.1/logo.png" />
+    <title>Centralista</title>
+    <link href="css/centralist.css" rel="stylesheet" />
+    <link href="css/centralist1.css" rel="stylesheet" />
+    <link href="css/dashcentr.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/css1/styles.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-color">
+        <img src="images.1/logo.png" alt="logo" width=42 height=45.46 margin-left="20px" href="#page-top" id="logo"></img>
+        <a class="navbar-brand" href="centralist.html" id="name">SECURE4ALL</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div id="app"></div>
+            </div>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="centralist-profile.html" id="menu-profile">Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" id="menu-logout">Sair</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <hr class="division">
+
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages" id="titles">
+                            <div class="sb-nav-link-icon"><img src="images.1/sirene.png" width="18" height="18" id="image"></img>
+                            </div>
+                            Ocorrências
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingFour" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" id="centralist-menu" href="add-occurrence.html">Adicionar ocorrência</a>
+                                <a class="nav-link" id="centralist-menu" href="list-occurence.html">Listar ocorrências</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage3" aria-expanded="false" aria-controls="collapsePage3" id="titles">
+                            <div class="sb-nav-link-icon"><img src="images.1/pedido2.png" width="18" height="18" id="image"></img>
+                            </div>
+                            Pedidos
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePage3" aria-labelledby="headingThree" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" id="centralist-menu" href="list-pending-req.html">Lista de pedidos pendentes</a>
+                                <a class="nav-link" id="centralist-menu" href="list-validated-req.html">Lista de pedidos validados</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division2">
+                <div class="sb-sidenav-footer bg-color">
+                    <div class="small">Ligado como:</div>
+                    Centralista
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content" class="dash-cent-pupnu">
+            <section class="get-in-touch" id="dash-cent-title">
+                <h1 class="titles">DASHBOARD</h1>
+                <br>
+                <br>
+                <br>
+
+            </section>
+            <div class="tools-dashborad">
+                <div class="row">
+                    <div class="col-sm-12" id="dash-cent1">
+                        <div class="col-sm-4">
+                            <div class="custom-tiles my-pending" id="peq_urg">
+                                <h3 class="animated slideInUp">Pedidos de Ajuda Urgentes</h3>
+                                <h1 id="urgente"></h1>
+                                <div class="icon-wrap" id="urgent-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                                <a href="list-urgent-req.html" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="custom-tiles in-progress" id="act-ocur">
+                                <h3 class="animated slideInUp">Ocorrências ativas</h3>
+                                <h1 id="occ-act"></h1>
+                                <div class="icon-wrap"><img src="images.1/sirene2.png" width=35 height=35></img>
+                                </div>
+                                <a href="list-occurence.html" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="custom-tiles group-pending" id="req_urg">
+                                <h3 class="animated slideInUp">Pedidos Pendentes</h3>
+                                <h1 id="req-pend"></h1>
+
+                                <div class="icon-wrap"><img src="images.1/list.png" width=32 height=40></img>
+                                </div>
+
+                                <a href="list-pending-req.html" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div class="col-sm-6" id="card_number_req">
+                        <div class="card marg-graf">
+                            <div class="card-header" id="graphic-title">Quantidade de pedidos</div>
+                            <div class="card-body"><canvas id="request-number"></canvas></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card marg-graf" id="card_number_occ">
+                            <div class="card-header" id="graphic-title">Quantidade de ocorrências</div>
+                            <div class="card-body"><canvas id="occo-number"></canvas></div>
+                        </div>
+                    </div>
+                </div>
+                </center>
+
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+            <script src="js/hour.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+            <script src="js/scripts.js"></script>
+            <script src="js/centralist.js"></script>
+            <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+            <script src="vendor/bootstrap/js1/datatables-demo.js"></script>
+            
+</body>
+
+</html>

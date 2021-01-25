@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <title>Registar Pedido</title>
+
+   <link rel="shortcut icon" type="imagem/x-png" href="images.1/logo.png" />
+
+   <!-- Bootstrap core CSS -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+   <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body>
+   <section class="get-in-touch" id="request-title">
+      <h1 class="title">Registar Pedido</h1>
+      <h4 id="request-noturgent" align="center">NÃO URGENTE</h4>
+      <form class="contact-form row" id="add-req">
+
+         <div class="form-field col-sm-5">
+            <label class="request-distance label" for="name">Nome</label>
+            <input id="request-name" class="input-text js-input" type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" maxlength="150" minlength="2" required>
+         </div>
+         <div class="col-sm-2">
+         </div>
+         <div class="form-field col-sm-5">
+            <label class="request-distance label" for="phone">Contacto </label>
+            <input id="request-phone" class="input-text js-input" type="tel" pattern="[0-9]+$" maxlength="9" minlength="9" required onkeypress='return filtroTeclas(event)'> 
+         </div>
+
+         <div class="form-field col-sm-5">
+            <label class="request-distance label" for="type">Tipo de ocorrência</label>
+            <select name="Tipo de ocorrência" id="request-type" required>
+                    <option value=""disabled selected></option>
+                    <option value="Queimadas">Queimadas</option>
+                    <option value="Transporte de doentes">Transporte de doentes</option>
+                    <option value="Enchimento de reservatórios">Enchimento de reservatórios</option>
+                </select>
+         </div>
+         </div>
+         <div class="col-sm-2">
+         </div>
+         <div class="form-field col-sm-5 ">
+            <input id="request-adress" class="input-text js-input" maxlength="150" minlength="5" type="text" required>
+            <label class="request-distance label" for="adress">Morada</label>
+         </div>
+
+         <div class="form-field col-sm-5 ">
+            <input id="request-date" class="input-text js-input" type="date" required>
+            <label class="request-distance label" for="date">Data</label>
+         </div>
+         <div class="col-sm-2">
+         </div>
+         <div class="form-field col-sm-5 ">
+            <input id="request-email" class="input-text js-input" maxlength="45" minlength="10" type="email" required>
+            <label class="request-distance label" for="email">Email</label>
+         </div>
+
+         <div class="form-field col-sm-5">
+            <label class="request-distance label" for="hour">Hora</label>
+            <input id="request-hour" class="input-text js-input" type="time" required>
+         </div>
+
+         <div class="form-field col-sm-12" id="div-description">
+            <label class="request-distance" id="label-descrition">Descrição</label>
+            <textarea rows="3" maxlength="300" id="request-descrition" class="js-input" name="textarea"></textarea>
+         </div>
+
+         <div class=" col-sm-12 text-right">
+            <a id="request-cancel" class="btn btn-primary btn-x1 text-uppercase js-scroll-trigger" type="button" value="cancelar" href="index.html"> CANCELAR</a>
+            <button id="request-submit" class="btn btn-primary btn-x1 js-scroll-trigge" type="submit" value="confirmar" href="">CONFIRMAR</button>
+         </div>
+
+      </form>
+   </section>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="js/add-request.js"></script>
+</body>
+
+</html>

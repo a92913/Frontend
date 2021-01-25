@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+header {
+  padding: 300px 0px;
+  text-align: center;
+  color: white;
+  background-image: url(https://pplware.sapo.pt/wp-content/uploads/2016/07/incendio.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  font-family: Roboto;
+  background-color: white !important;
+  max-width: 1800px;
+  min-width:1140px;
+}
+
+body {
+  font-family: Roboto;
+}
+
+footer {
+  font-family: Roboto;
+}
+
+section {
+  padding: 120px 0;
+}
+
+#navbar2{
+      justify-content: space-between;
+}
+
+#index-request {
+  cursor: pointer;
+  background-color: #390606;
+  border-color: #390606;
+  font-size: 18px;
+  padding: 20px 40px;
+  border-radius: 12px;
+}
+
+#index-request:focus,
+#index-request:hover {
+  box-shadow: 0 0 0 0;
+  border-color: #590C0C;
+  background-color: #590C0C;
+}
+
+.navbar {
+  background-color: #390606 !important;
+  height:60px;
+}
+
+a.navbar:hover,
+a.navbar:focus,
+button.navbar:hover,
+button.navbar:focus {
+  background-color: #1d2124 !important;
+}
+
+#index-footer {
+  background-color: #390606 !important;
+}
+
+.lead{
+  cursor:default;
+}
+
+#telfone{
+  cursor:default;
+}
+
+#titles{
+  cursor:default;
+}
+
+#index-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#index-login {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0.1rem 2rem;
+  margin-top: 5%;
+  max-width:111.6px;
+  
+}
+
+#index-login:hover {
+  box-shadow: 0 0 0 0.1rem white;
+}
+
+#index-voluntary {
+  padding-right: 3.5rem;
+}
+
+#login_button{
+    margin-left: 30px;
+}
+/*-------------------REQUEST---------------------*/
+
+.get-in-touch {
+  max-width: 1200px;
+  margin: 50px auto;
+  position: relative;
+  margin-top:1%;
+}
+
+#request-title {
+  padding: 0 0px;
+}
+
+.request-title {
+  color: #621818 !important;
+}
+
+.get-in-touch .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 25px;
+  line-height: 48px;
+  color: #611818;
+  background: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #611818;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.contact-form .input-text:focus,
+#request-type,
+#request-descrition {
+  outline: none;
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #611818;
+  margin: inherit;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #611818;
+  color: #EAD2D2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 7px 12px;
+  border: none;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 18px;
+  text-align: center;
+}
+
+#request-type {
+  border-width: 0 0 2px 0;
+  border-color: #611818;
+  width: 100%;
+  padding: 7px;
+  text-align-last: center !important;
+  text-align: center !important;
+}
+
+#request-noturgent {
+  color: #611818;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 15.4px;
+  font-weight: bold;
+}
+
+.request-distance {
+  margin-bottom: 1rem;
+}
+
+#request-cancel,
+#request-submit {
+  background-color: #611818;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 18px;
+  font-weight: normal;
+  width: 150px;
+  border-color: #611818;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+#request-cancel:hover,
+#request-submit:hover,
+#request-cancel:focus,
+#request-submit:focus {
+  box-shadow: 0 0 0 0;
+  border-color: #611818;
+   opacity:0.8;
+}
+
+#label-descrition {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #611818;
+  cursor: text;
+  margin-left: 5px;
+}
+
+#div-description{
+  top:-16px;
+}
+
+#request-descrition {
+  width: 100%;
+  border-width: 0 0 2px 0;
+  border-color: #611818;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: -1.6%;
+}
+
+
+.swal-button {
+  background-color:#390606;
+  border-radius: 15px;
+  border-line: #390606;
+  border-color: #390606 !important;
+}
+.swal-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: #390606 ;
+    opacity:0.8;
+    border-line:#390606;
+}
+
+
+/*--------------------------------------LOGIN----------------------------------*/
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    height: 25px;
+}
+
+#div-5-login{
+  min-width:500px;
+  position:absolute;
+}
+#div-row-login{
+  min-width:500px;
+}
+#login-body,
+#login-header {
+  background-color: white !important;
+}
+
+#login-header {
+  margin-top: 5rem;
+}
+
+#login-title {
+  font-weight: bold;
+  cursor:default;
+}
+
+#login-btn {
+  background-color:#390606!important;
+}
+
+#login-forgot {
+  color: black;
+  cursor:pointer;
+}
+
+#login-btn {
+  border-radius: 18px;
+  border-color: #390606;
+  width: 150px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#login-body {
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 1;
+  position: absolute;
+  z-index: -1;
+}
+
+#login-ps {
+  border-color: black;
+  border-radius: 9px;
+}
+
+#login-ps-show {
+  top: 62%;
+  right: 3.5%;
+  display: block;
+  font-weight: 400;
+  background-color: white;
+  font-size: 18px;
+}
+
+.inputLogin {
+  height: 50px;
+}
+
+.buttonInput {
+  color: #390606;
+  position: absolute;
+  font-size: 16px;
+  opacity: 1;
+  text-align: right;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#login-email-email {
+  border-color: black;
+  border-radius: 9px;
+}
+
+#login-ps:focus,
+#login-email-email:focus {
+  border-color: #390606;
+  box-shadow: 0 0 0 0.1rem #390606;
+}
+
+#login-ps-show:focus,
+#login-ps-show:hover {
+  box-shadow: none;
+  font-weight: 600;
+  color: #390606;
+}
+
+#login-btn:focus,
+#login-btn:hover {
+  box-shadow: 0 0 0 0;
+  border-color: #390606;
+  opacity:0.8;
+
+}
+
+#userDropdown{
+margin-right: 10px;
+}
+
+.swal2-styled.swal2-cancel:not([disabled]):hover {
+  background-color: #390606;
+  opacity: 0.8;
+  border-line: #390606;
+  border-radius: 15px;
+}
+
+.swal2-styled.swal2-cancel{
+   border-radius: 15px !important;
+}
+
+.swal2-styled.swal2-confirm{
+   border-radius: 15px !important;
+}
+
+
+.swal2-styled.swal2-confirm:not([disabled]):hover {
+   background-color: #390606;
+   opacity: 0.8;
+   border-line: #390606;
+   border-radius: 15px;
+}
+
+.swal2-file:focus, .swal2-input:focus, .swal2-textarea:focus {
+    border: 1px solid #390606 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #390606 !important;
+    color: #fff;
+    font-size: 1.0625em;
+}
+
+.swal2-styled:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+    
+    
+/*----------------------------------------PASSWORD--------------------------------*/
+
+#password-emailconf {
+  background-color: #390606 !important;
+  border-radius: 15px;
+  font-size: 15px;
+  margin-left: 38%;
+  margin-top: 9%;
+  border: white;
+  width: 150px;
+}
+
+#password-body {
+  background-color: white !important;
+}
+
+.card-header {
+  background-color: white !important;
+  color: black;
+}
+
+#password-text {
+  text-align: center !important;
+  color: black;
+  font-size: 18px;
+}
+
+#password-header {
+  margin-top: 10rem;
+  font-size: 30px !important;
+}
+
+#password-email {
+  margin-top: 3rem;
+  border: black;
+}
+
+#inputEmailAddress {
+  border-color: black;
+  border-radius: 9px;
+}
+
+#password-emailconf:hover,
+#password-emailconf:focus {
+  box-shadow: 0 0 0 0;
+  border-color: #390606;
+  opacity:0.8;
+}
+
+#inputEmailAddress:focus {
+  border-color: #390606;
+  box-shadow: 0 0 0 0.1rem #390606;
+}
+
+#login-forgot:hover,
+#login-forgot:focus {
+  text-decoration: none;
+}
+
+/*EDITAR PALAVRA PASSE CENTRALISTA E DIRETOR*/
+
+#password-header {
+  top: 10%;
+}
+
+#login-ps-show1 {
+  top: 37%;
+  right: 3.5%;
+  display: block;
+  font-weight: 400;
+  background-color: white;
+  font-size: 18px;
+}
+
+#login-ps-show2 {
+  top: 57%;
+  right: 3.5%;
+  display: block;
+  font-weight: 400;
+  background-color: white;
+  font-size: 18px;
+}
+
+#login-ps-show1:focus,
+#login-ps-show1:hover,
+#login-ps-show2:focus,
+#login-ps-show2:hover {
+  box-shadow: none;
+  font-weight: 600;
+  color: #390606;
+}
+
+#login-ps1 {
+  border-color: black;
+  border-radius: 9px;
+}
+
+#login-ps2 {
+  border-color: black;
+  border-radius: 9px;
+}
+
+#login-ps1:focus,
+#login-ps2:focus {
+  border-color: #390606;
+  box-shadow: 0 0 0 0.1rem #390606;
+}
+
+textarea[name=textarea] {
+  resize: none;
+}
+
+.swal2-styled.swal2-cancel,
+.swal2-styled.swal2-confirm {
+  width:100px;
+}
