@@ -81,7 +81,6 @@ addassoc.addEventListener("click", function() {
           const checkout_date = partner.checkout_date;
           const id = partner.num_partner;
           let string = `${checkout_date.substr(0,10 )}`;
-          alert(string)
 
           if (string.toString() != "1111-01-01" ) {
 
