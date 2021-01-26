@@ -160,7 +160,7 @@ const url = "https://backend-heroku1.herokuapp.com";
 
                               else {
                                 swal({
-                                  title: "O diretor " + selecionado[0].innerHTML + " foi removido com sucesso!",
+                                  title: "O Bombeiro " + selecionado[0].innerHTML + " foi removido com sucesso!",
                                   icon: "success",
                                 });
                                 ln.remove();

@@ -61,7 +61,7 @@ redefinir.addEventListener("click", function() {
                 }
                 else {}
                 Swal.fire({
-                    title: "Email enviado com sucesso com sucesso",
+                    title: "Email enviado com sucesso",
                     icon: "success",
                 })
             }).then(function(result) {

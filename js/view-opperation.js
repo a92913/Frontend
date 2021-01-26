@@ -456,11 +456,11 @@ async function login() {
         })
 };
 
-/*document.getElementById("button_chhose").onclick = function(e) {
+document.getElementById("button_chhose").onclick = function(e) {
     editPhoto();
 };
 
-/*async function editPhoto() {
+async function editPhoto() {
     let data = {};
     let id = localStorage.iddir;
     data.foto = localStorage.foto;
@@ -489,7 +489,7 @@ async function login() {
     }).catch(function(err) {
         console.error(err);
     });
-}*/
+}
 
 function saveAvatar() {
     //console.log(data); //debugging para ver os dados que foram enviados

@@ -15,11 +15,11 @@ const url = "https://backend-heroku1.herokuapp.com";
 
       $('#Table-centralist').DataTable({
         "language": {
-          "lengthMenu": "Mostrar _MENU_ centralist por página",
+          "lengthMenu": "Mostrar _MENU_ centralistas por página",
           "zeroRecords": "Nada encontrado",
           "info": "Mostrar página _PAGE_ de _PAGES_",
           "infoEmpty": "Nenhhum centralista",
-          "infoFiltered": "(Filtrado _MAX_ centralista)",
+          "infoFiltered": "(Filtrado _MAX_ centralistas)",
           "search": "Procurar:",
           "paginate": {
             "next": "Próxima",
@@ -163,7 +163,7 @@ const url = "https://backend-heroku1.herokuapp.com";
                               }
                               else {
                                 swal({
-                                  title: "O centralist " + selecionado[0].innerHTML + " foi removido com sucesso!",
+                                  title: "O centralista " + selecionado[0].innerHTML + " foi removido com sucesso!",
                                   icon: "success",
                                 });
                                 ln.remove();
