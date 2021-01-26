@@ -44,7 +44,7 @@ dir_ps.addEventListener("click", function() {
         data.password = result.value.ps;
         data.id_login = idlogin;
 
-        fetch(url + `/usersupdatePassword/` + idlogin, {
+        fetch(url + `/uesersupdatePassword/` + idlogin, {
             headers: { 'Content-Type': 'application/json' },
             method: 'PUT',
             body: JSON.stringify(data)
